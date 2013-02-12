@@ -19,10 +19,10 @@
             </objects>
             <point key="canvasLocation" x="-1" y="64"/>
         </scene>
-        <!--View Controller-->
+        <!--Coe Web View Controller-->
         <scene sceneID="87m-Gp-1cS">
             <objects>
-                <viewController id="jh7-wO-9pN" sceneMemberID="viewController">
+                <viewController id="jh7-wO-9pN" customClass="CoeWebViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2qP-hX-8Cv">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -43,12 +43,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="geV-tS-QXK" firstAttribute="top" secondItem="2qP-hX-8Cv" secondAttribute="top" constant="-7" id="1Ed-QX-pHy"/>
                             <constraint firstItem="geV-tS-QXK" firstAttribute="top" secondItem="Gj5-xd-s11" secondAttribute="bottom" type="default" id="6CI-7u-tAX"/>
                             <constraint firstItem="Gj5-xd-s11" firstAttribute="leading" secondItem="2qP-hX-8Cv" secondAttribute="leading" type="default" id="8uK-1P-wcY"/>
                             <constraint firstItem="geV-tS-QXK" firstAttribute="leading" secondItem="2qP-hX-8Cv" secondAttribute="leading" type="default" id="ENG-uB-ijG"/>
                             <constraint firstItem="Gj5-xd-s11" firstAttribute="trailing" secondItem="2qP-hX-8Cv" secondAttribute="trailing" type="default" id="N2M-jV-6ND"/>
                             <constraint firstItem="geV-tS-QXK" firstAttribute="trailing" secondItem="2qP-hX-8Cv" secondAttribute="trailing" type="default" id="TqX-d4-E89"/>
-                            <constraint firstItem="geV-tS-QXK" firstAttribute="bottom" secondItem="2qP-hX-8Cv" secondAttribute="bottom" type="default" id="hZs-tI-Dj2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7J9-4z-S0A"/>
@@ -60,6 +60,7 @@
         <!--Coe Master View Controller - Master-->
         <scene sceneID="18">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="" title="Master" id="12" customClass="CoeMasterViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="46" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
@@ -92,7 +93,7 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="jh7-wO-9pN" kind="push" id="2j3-wg-lfz"/>
+                                                        <segue destination="jh7-wO-9pN" kind="push" identifier="showWeb" id="2j3-wg-lfz"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -141,7 +142,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="36"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="459" y="64"/>
         </scene>
@@ -149,14 +149,6 @@
     <resources>
         <image name="coe_college_logo.jpg" width="804" height="450"/>
     </resources>
-    <classes>
-        <class className="CoeMasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoeMasterViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

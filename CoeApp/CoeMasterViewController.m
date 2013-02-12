@@ -7,8 +7,7 @@
 //
 
 #import "CoeMasterViewController.h"
-
-#import "CoeDetailViewController.h"
+#import "CoeWebViewController.h"
 
 @interface CoeMasterViewController () {
     NSMutableArray *_objects;
@@ -103,7 +102,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+    if ([[segue identifier] isEqualToString:@"showWeb"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDate *object = _objects[indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
