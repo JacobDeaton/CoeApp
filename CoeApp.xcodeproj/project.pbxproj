@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		711E6A2C16CAAD7B005648D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711E6A2B16CAAD7B005648D6 /* UIKit.framework */; };
+		711E6A2E16CAAD7B005648D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711E6A2D16CAAD7B005648D6 /* Foundation.framework */; };
+		711E6A3016CAAD7B005648D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711E6A2F16CAAD7B005648D6 /* CoreGraphics.framework */; };
+		711E6A3616CAAD7B005648D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 711E6A3416CAAD7B005648D6 /* InfoPlist.strings */; };
+		711E6A3816CAAD7B005648D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 711E6A3716CAAD7B005648D6 /* main.m */; };
+		711E6A3C16CAAD7B005648D6 /* CoeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 711E6A3B16CAAD7B005648D6 /* CoeAppDelegate.m */; };
+		711E6A3E16CAAD7B005648D6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 711E6A3D16CAAD7B005648D6 /* Default.png */; };
+		711E6A4016CAAD7B005648D6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711E6A3F16CAAD7B005648D6 /* Default@2x.png */; };
+		711E6A4216CAAD7C005648D6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711E6A4116CAAD7C005648D6 /* Default-568h@2x.png */; };
+		711E6A4516CAAD7C005648D6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711E6A4316CAAD7C005648D6 /* MainStoryboard.storyboard */; };
+		711E6A4816CAAD7C005648D6 /* CoeMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711E6A4716CAAD7C005648D6 /* CoeMasterViewController.m */; };
+		711E6A4B16CAAD7C005648D6 /* CoeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711E6A4A16CAAD7C005648D6 /* CoeDetailViewController.m */; };
+		711E6A5216CAB596005648D6 /* coe-college.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 711E6A5116CAB596005648D6 /* coe-college.jpg */; };
+		711E6A5416CAB5EE005648D6 /* coe_college_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 711E6A5316CAB5EE005648D6 /* coe_college_logo.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		711E6A2716CAAD7B005648D6 /* CoeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		711E6A2B16CAAD7B005648D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		711E6A2D16CAAD7B005648D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		711E6A2F16CAAD7B005648D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		711E6A3316CAAD7B005648D6 /* CoeApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoeApp-Info.plist"; sourceTree = "<group>"; };
+		711E6A3516CAAD7B005648D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		711E6A3716CAAD7B005648D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		711E6A3916CAAD7B005648D6 /* CoeApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoeApp-Prefix.pch"; sourceTree = "<group>"; };
+		711E6A3A16CAAD7B005648D6 /* CoeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoeAppDelegate.h; sourceTree = "<group>"; };
+		711E6A3B16CAAD7B005648D6 /* CoeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoeAppDelegate.m; sourceTree = "<group>"; };
+		711E6A3D16CAAD7B005648D6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		711E6A3F16CAAD7B005648D6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		711E6A4116CAAD7C005648D6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		711E6A4416CAAD7C005648D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		711E6A4616CAAD7C005648D6 /* CoeMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoeMasterViewController.h; sourceTree = "<group>"; };
+		711E6A4716CAAD7C005648D6 /* CoeMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoeMasterViewController.m; sourceTree = "<group>"; };
+		711E6A4916CAAD7C005648D6 /* CoeDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoeDetailViewController.h; sourceTree = "<group>"; };
+		711E6A4A16CAAD7C005648D6 /* CoeDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoeDetailViewController.m; sourceTree = "<group>"; };
+		711E6A5116CAB596005648D6 /* coe-college.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "coe-college.jpg"; path = "../../../../Downloads/coe-college.jpg"; sourceTree = "<group>"; };
+		711E6A5316CAB5EE005648D6 /* coe_college_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coe_college_logo.jpg; path = ../../../../Downloads/coe_college_logo.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		711E6A2416CAAD7B005648D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711E6A2C16CAAD7B005648D6 /* UIKit.framework in Frameworks */,
+				711E6A2E16CAAD7B005648D6 /* Foundation.framework in Frameworks */,
+				711E6A3016CAAD7B005648D6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		711E6A1C16CAAD7B005648D6 = {
+			isa = PBXGroup;
+			children = (
+				711E6A3116CAAD7B005648D6 /* CoeApp */,
+				711E6A2A16CAAD7B005648D6 /* Frameworks */,
+				711E6A2816CAAD7B005648D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		711E6A2816CAAD7B005648D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				711E6A2716CAAD7B005648D6 /* CoeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		711E6A2A16CAAD7B005648D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				711E6A2B16CAAD7B005648D6 /* UIKit.framework */,
+				711E6A2D16CAAD7B005648D6 /* Foundation.framework */,
+				711E6A2F16CAAD7B005648D6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		711E6A3116CAAD7B005648D6 /* CoeApp */ = {
+			isa = PBXGroup;
+			children = (
+				711E6A3A16CAAD7B005648D6 /* CoeAppDelegate.h */,
+				711E6A3B16CAAD7B005648D6 /* CoeAppDelegate.m */,
+				711E6A4316CAAD7C005648D6 /* MainStoryboard.storyboard */,
+				711E6A4616CAAD7C005648D6 /* CoeMasterViewController.h */,
+				711E6A4716CAAD7C005648D6 /* CoeMasterViewController.m */,
+				711E6A4916CAAD7C005648D6 /* CoeDetailViewController.h */,
+				711E6A4A16CAAD7C005648D6 /* CoeDetailViewController.m */,
+				711E6A3216CAAD7B005648D6 /* Supporting Files */,
+			);
+			path = CoeApp;
+			sourceTree = "<group>";
+		};
+		711E6A3216CAAD7B005648D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				711E6A5316CAB5EE005648D6 /* coe_college_logo.jpg */,
+				711E6A5116CAB596005648D6 /* coe-college.jpg */,
+				711E6A3316CAAD7B005648D6 /* CoeApp-Info.plist */,
+				711E6A3416CAAD7B005648D6 /* InfoPlist.strings */,
+				711E6A3716CAAD7B005648D6 /* main.m */,
+				711E6A3916CAAD7B005648D6 /* CoeApp-Prefix.pch */,
+				711E6A3D16CAAD7B005648D6 /* Default.png */,
+				711E6A3F16CAAD7B005648D6 /* Default@2x.png */,
+				711E6A4116CAAD7C005648D6 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		711E6A2616CAAD7B005648D6 /* CoeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 711E6A4E16CAAD7C005648D6 /* Build configuration list for PBXNativeTarget "CoeApp" */;
+			buildPhases = (
+				711E6A2316CAAD7B005648D6 /* Sources */,
+				711E6A2416CAAD7B005648D6 /* Frameworks */,
+				711E6A2516CAAD7B005648D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoeApp;
+			productName = CoeApp;
+			productReference = 711E6A2716CAAD7B005648D6 /* CoeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		711E6A1E16CAAD7B005648D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Coe;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "TIMOTHY AHLINE";
+			};
+			buildConfigurationList = 711E6A2116CAAD7B005648D6 /* Build configuration list for PBXProject "CoeApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 711E6A1C16CAAD7B005648D6;
+			productRefGroup = 711E6A2816CAAD7B005648D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				711E6A2616CAAD7B005648D6 /* CoeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		711E6A2516CAAD7B005648D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711E6A3616CAAD7B005648D6 /* InfoPlist.strings in Resources */,
+				711E6A3E16CAAD7B005648D6 /* Default.png in Resources */,
+				711E6A4016CAAD7B005648D6 /* Default@2x.png in Resources */,
+				711E6A4216CAAD7C005648D6 /* Default-568h@2x.png in Resources */,
+				711E6A4516CAAD7C005648D6 /* MainStoryboard.storyboard in Resources */,
+				711E6A5216CAB596005648D6 /* coe-college.jpg in Resources */,
+				711E6A5416CAB5EE005648D6 /* coe_college_logo.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		711E6A2316CAAD7B005648D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711E6A3816CAAD7B005648D6 /* main.m in Sources */,
+				711E6A3C16CAAD7B005648D6 /* CoeAppDelegate.m in Sources */,
+				711E6A4816CAAD7C005648D6 /* CoeMasterViewController.m in Sources */,
+				711E6A4B16CAAD7C005648D6 /* CoeDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		711E6A3416CAAD7B005648D6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				711E6A3516CAAD7B005648D6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		711E6A4316CAAD7C005648D6 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				711E6A4416CAAD7C005648D6 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		711E6A4C16CAAD7C005648D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		711E6A4D16CAAD7C005648D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		711E6A4F16CAAD7C005648D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoeApp/CoeApp-Prefix.pch";
+				INFOPLIST_FILE = "CoeApp/CoeApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		711E6A5016CAAD7C005648D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoeApp/CoeApp-Prefix.pch";
+				INFOPLIST_FILE = "CoeApp/CoeApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		711E6A2116CAAD7B005648D6 /* Build configuration list for PBXProject "CoeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				711E6A4C16CAAD7C005648D6 /* Debug */,
+				711E6A4D16CAAD7C005648D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		711E6A4E16CAAD7C005648D6 /* Build configuration list for PBXNativeTarget "CoeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				711E6A4F16CAAD7C005648D6 /* Debug */,
+				711E6A5016CAAD7C005648D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 711E6A1E16CAAD7B005648D6 /* Project object */;
+}
