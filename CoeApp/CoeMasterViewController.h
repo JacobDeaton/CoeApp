@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CoeMasterViewController : UITableViewController
+- (IBAction)cancel:(UIStoryboardSegue *)segue;
 
 @end

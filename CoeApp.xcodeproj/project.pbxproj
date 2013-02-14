@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		71029B0416CABCB40091C08C /* coe_college_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71029B0316CABCB40091C08C /* coe_college_logo.jpg */; };
 		71029B0716CABE240091C08C /* CoeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71029B0616CABE240091C08C /* CoeWebViewController.m */; };
+		710ACD9416CD58C2009C844D /* arrow-pointing-left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 710ACD9216CD58C2009C844D /* arrow-pointing-left.jpg */; };
+		710ACD9516CD58C2009C844D /* Unknown in Resources */ = {isa = PBXBuildFile; fileRef = 710ACD9316CD58C2009C844D /* Unknown */; };
 		711E6A2C16CAAD7B005648D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711E6A2B16CAAD7B005648D6 /* UIKit.framework */; };
 		711E6A2E16CAAD7B005648D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711E6A2D16CAAD7B005648D6 /* Foundation.framework */; };
 		711E6A3016CAAD7B005648D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711E6A2F16CAAD7B005648D6 /* CoreGraphics.framework */; };
@@ -26,6 +28,8 @@
 		71029B0316CABCB40091C08C /* coe_college_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coe_college_logo.jpg; path = ../../../Downloads/coe_college_logo.jpg; sourceTree = "<group>"; };
 		71029B0516CABE240091C08C /* CoeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoeWebViewController.h; sourceTree = "<group>"; };
 		71029B0616CABE240091C08C /* CoeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoeWebViewController.m; sourceTree = "<group>"; };
+		710ACD9216CD58C2009C844D /* arrow-pointing-left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "arrow-pointing-left.jpg"; path = "../../../Downloads/arrow-pointing-left.jpg"; sourceTree = "<group>"; };
+		710ACD9316CD58C2009C844D /* Unknown */ = {isa = PBXFileReference; lastKnownFileType = file; name = Unknown; path = ../../../Downloads/Unknown; sourceTree = "<group>"; };
 		711E6A2716CAAD7B005648D6 /* CoeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		711E6A2B16CAAD7B005648D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		711E6A2D16CAAD7B005648D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,6 +107,8 @@
 		711E6A3216CAAD7B005648D6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				710ACD9216CD58C2009C844D /* arrow-pointing-left.jpg */,
+				710ACD9316CD58C2009C844D /* Unknown */,
 				71029B0316CABCB40091C08C /* coe_college_logo.jpg */,
 				711E6A3316CAAD7B005648D6 /* CoeApp-Info.plist */,
 				711E6A3416CAAD7B005648D6 /* InfoPlist.strings */,
@@ -173,6 +179,8 @@
 				711E6A4216CAAD7C005648D6 /* Default-568h@2x.png in Resources */,
 				711E6A4516CAAD7C005648D6 /* MainStoryboard.storyboard in Resources */,
 				71029B0416CABCB40091C08C /* coe_college_logo.jpg in Resources */,
+				710ACD9416CD58C2009C844D /* arrow-pointing-left.jpg in Resources */,
+				710ACD9516CD58C2009C844D /* Unknown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

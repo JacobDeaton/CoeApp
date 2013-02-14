@@ -16,6 +16,13 @@
 
 @implementation CoeMasterViewController
 
+- (IBAction)cancel:(UIStoryboardSegue *)segue
+{
+    if ([[segue identifier] isEqualToString:@"CancelInput"]) {
+        [self dismissViewControllerAnimated:YES completion:NULL];
+    }
+}
+
 - (void)awakeFromNib
 {
     [super awakeFromNib];
@@ -25,10 +32,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+//    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+//
+//    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+//    self.navigationItem.rightBarButtonItem = addButton;
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,12 +46,12 @@
 
 - (void)insertNewObject:(id)sender
 {
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
-    }
-    [_objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+//    if (!_objects) {
+//        _objects = [[NSMutableArray alloc] init];
+//    }
+//    [_objects insertObject:[NSDate date] atIndex:0];
+//    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+//    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 #pragma mark - Table View
@@ -100,12 +107,13 @@
 }
 */
 
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showWeb"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+//        NSDate *object = _objects[indexPath.row];
+//        [[segue destinationViewController] setDetailItem:object];
     }
 }
 

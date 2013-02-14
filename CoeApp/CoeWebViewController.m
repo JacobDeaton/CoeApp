@@ -5,7 +5,7 @@
 //  Created by TIMOTHY AHLINE on 2/12/13.
 //  Copyright (c) 2013 TIMOTHY AHLINE. All rights reserved.
 //
-
+#import "CoeMasterViewController.h"
 #import "CoeWebViewController.h"
 
 @interface CoeWebViewController ()
@@ -14,14 +14,14 @@
 
 @implementation CoeWebViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+//- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+//{
+//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+//    if (self) {
+//        // Custom initialization
+//    }
+//    return self;
+//}
 
 - (void)viewDidLoad
 {

@@ -19,7 +19,7 @@
             </objects>
             <point key="canvasLocation" x="-1" y="64"/>
         </scene>
-        <!--Coe Web View Controller-->
+        <!--Coe Web View Controller - Web View-->
         <scene sceneID="87m-Gp-1cS">
             <objects>
                 <viewController id="jh7-wO-9pN" customClass="CoeWebViewController" sceneMemberID="viewController">
@@ -27,40 +27,61 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="geV-tS-QXK">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="geV-tS-QXK">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="510" id="rMR-Ko-yz5"/>
-                                </constraints>
                             </webView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gj5-xd-s11">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKg-fR-8hH">
                                 <items>
-                                    <navigationItem title="Mobile Website" id="dld-8r-59q">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="SLg-Yd-IPA"/>
-                                    </navigationItem>
+                                    <barButtonItem systemItem="rewind" id="WSN-WW-dVe">
+                                        <connections>
+                                            <action selector="goBack" destination="geV-tS-QXK" id="PbT-jw-PpC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="GNN-OW-gm0">
+                                        <connections>
+                                            <action selector="goForward" destination="geV-tS-QXK" id="Sjj-hj-5x1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="126" style="plain" systemItem="fixedSpace" id="iHj-sO-Kqq"/>
+                                    <barButtonItem systemItem="refresh" id="4pl-LZ-IB5">
+                                        <connections>
+                                            <action selector="reload" destination="geV-tS-QXK" id="3c2-Wp-pM2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="stop" id="r7u-P7-oe1"/>
                                 </items>
-                            </navigationBar>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="geV-tS-QXK" firstAttribute="top" secondItem="2qP-hX-8Cv" secondAttribute="top" constant="-7" id="1Ed-QX-pHy"/>
-                            <constraint firstItem="geV-tS-QXK" firstAttribute="top" secondItem="Gj5-xd-s11" secondAttribute="bottom" type="default" id="6CI-7u-tAX"/>
-                            <constraint firstItem="Gj5-xd-s11" firstAttribute="leading" secondItem="2qP-hX-8Cv" secondAttribute="leading" type="default" id="8uK-1P-wcY"/>
+                            <constraint firstItem="lKg-fR-8hH" firstAttribute="trailing" secondItem="2qP-hX-8Cv" secondAttribute="trailing" type="default" id="9Zr-ui-aHo"/>
                             <constraint firstItem="geV-tS-QXK" firstAttribute="leading" secondItem="2qP-hX-8Cv" secondAttribute="leading" type="default" id="ENG-uB-ijG"/>
-                            <constraint firstItem="Gj5-xd-s11" firstAttribute="trailing" secondItem="2qP-hX-8Cv" secondAttribute="trailing" type="default" id="N2M-jV-6ND"/>
                             <constraint firstItem="geV-tS-QXK" firstAttribute="trailing" secondItem="2qP-hX-8Cv" secondAttribute="trailing" type="default" id="TqX-d4-E89"/>
+                            <constraint firstItem="geV-tS-QXK" firstAttribute="top" secondItem="2qP-hX-8Cv" secondAttribute="top" type="default" id="cJq-mr-1Vn"/>
+                            <constraint firstItem="lKg-fR-8hH" firstAttribute="bottom" secondItem="2qP-hX-8Cv" secondAttribute="bottom" type="default" id="jz0-PD-pho"/>
+                            <constraint firstItem="lKg-fR-8hH" firstAttribute="leading" secondItem="2qP-hX-8Cv" secondAttribute="leading" type="default" id="sqs-wD-hKI"/>
+                            <constraint firstItem="lKg-fR-8hH" firstAttribute="top" secondItem="geV-tS-QXK" secondAttribute="bottom" type="default" id="vXd-gl-tPV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7J9-4z-S0A"/>
+                    <navigationItem key="navigationItem" title="Web View" id="7J9-4z-S0A">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="t5m-v6-ECo">
+                            <connections>
+                                <segue destination="sRK-bc-sdl" kind="unwind" unwindAction="cancel:" id="Jhx-n5-0mL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myWebView" destination="geV-tS-QXK" id="wxu-3U-SHU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYS-Dj-8h9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="sRK-bc-sdl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-3" y="746"/>
         </scene>
         <!--Coe Master View Controller - Master-->
         <scene sceneID="18">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="" title="Master" id="12" customClass="CoeMasterViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="46" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
@@ -142,6 +163,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="36"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="459" y="64"/>
         </scene>
@@ -149,6 +171,26 @@
     <resources>
         <image name="coe_college_logo.jpg" width="804" height="450"/>
     </resources>
+    <classes>
+        <class className="CoeMasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoeMasterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:" candidateClass="UIStoryboardSegue"/>
+            </relationships>
+        </class>
+        <class className="CoeWebViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoeWebViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="myWebView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UIStoryboardSegue" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
