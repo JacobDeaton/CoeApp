@@ -12,6 +12,7 @@
 		710ACD9416CD58C2009C844D /* arrow-pointing-left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 710ACD9216CD58C2009C844D /* arrow-pointing-left.jpg */; };
 		710ACD9516CD58C2009C844D /* Unknown in Resources */ = {isa = PBXBuildFile; fileRef = 710ACD9316CD58C2009C844D /* Unknown */; };
 		710ACDB016CD5F85009C844D /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710ACDAF16CD5F85009C844D /* Twitter.framework */; };
+		710ACDB216CD601A009C844D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710ACDB116CD601A009C844D /* MapKit.framework */; };
 		711E6A2C16CAAD7B005648D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711E6A2B16CAAD7B005648D6 /* UIKit.framework */; };
 		711E6A2E16CAAD7B005648D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711E6A2D16CAAD7B005648D6 /* Foundation.framework */; };
 		711E6A3016CAAD7B005648D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711E6A2F16CAAD7B005648D6 /* CoreGraphics.framework */; };
@@ -32,6 +33,7 @@
 		710ACD9216CD58C2009C844D /* arrow-pointing-left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "arrow-pointing-left.jpg"; path = "../../../Downloads/arrow-pointing-left.jpg"; sourceTree = "<group>"; };
 		710ACD9316CD58C2009C844D /* Unknown */ = {isa = PBXFileReference; lastKnownFileType = file; name = Unknown; path = ../../../Downloads/Unknown; sourceTree = "<group>"; };
 		710ACDAF16CD5F85009C844D /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		710ACDB116CD601A009C844D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		711E6A2716CAAD7B005648D6 /* CoeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		711E6A2B16CAAD7B005648D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		711E6A2D16CAAD7B005648D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				710ACDB216CD601A009C844D /* MapKit.framework in Frameworks */,
 				710ACDB016CD5F85009C844D /* Twitter.framework in Frameworks */,
 				711E6A2C16CAAD7B005648D6 /* UIKit.framework in Frameworks */,
 				711E6A2E16CAAD7B005648D6 /* Foundation.framework in Frameworks */,
@@ -85,6 +88,7 @@
 		711E6A2A16CAAD7B005648D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				710ACDB116CD601A009C844D /* MapKit.framework */,
 				710ACDAF16CD5F85009C844D /* Twitter.framework */,
 				711E6A2B16CAAD7B005648D6 /* UIKit.framework */,
 				711E6A2D16CAAD7B005648D6 /* Foundation.framework */,
