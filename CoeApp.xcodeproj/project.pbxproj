@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		71029B0416CABCB40091C08C /* coe_college_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71029B0316CABCB40091C08C /* coe_college_logo.jpg */; };
 		71029B0716CABE240091C08C /* CoeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71029B0616CABE240091C08C /* CoeWebViewController.m */; };
-		710ACD9416CD58C2009C844D /* arrow-pointing-left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 710ACD9216CD58C2009C844D /* arrow-pointing-left.jpg */; };
-		710ACD9516CD58C2009C844D /* Unknown in Resources */ = {isa = PBXBuildFile; fileRef = 710ACD9316CD58C2009C844D /* Unknown */; };
 		710ACDB016CD5F85009C844D /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710ACDAF16CD5F85009C844D /* Twitter.framework */; };
 		710ACDB216CD601A009C844D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710ACDB116CD601A009C844D /* MapKit.framework */; };
 		711E6A2C16CAAD7B005648D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711E6A2B16CAAD7B005648D6 /* UIKit.framework */; };
@@ -24,14 +21,12 @@
 		711E6A4216CAAD7C005648D6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711E6A4116CAAD7C005648D6 /* Default-568h@2x.png */; };
 		711E6A4516CAAD7C005648D6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711E6A4316CAAD7C005648D6 /* MainStoryboard.storyboard */; };
 		711E6A4816CAAD7C005648D6 /* CoeMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711E6A4716CAAD7C005648D6 /* CoeMasterViewController.m */; };
+		E8D562FA16D19A1D00E43E26 /* CoeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D562F916D19A1D00E43E26 /* CoeMapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		71029B0316CABCB40091C08C /* coe_college_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coe_college_logo.jpg; path = ../../../Downloads/coe_college_logo.jpg; sourceTree = "<group>"; };
 		71029B0516CABE240091C08C /* CoeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoeWebViewController.h; sourceTree = "<group>"; };
 		71029B0616CABE240091C08C /* CoeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoeWebViewController.m; sourceTree = "<group>"; };
-		710ACD9216CD58C2009C844D /* arrow-pointing-left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "arrow-pointing-left.jpg"; path = "../../../Downloads/arrow-pointing-left.jpg"; sourceTree = "<group>"; };
-		710ACD9316CD58C2009C844D /* Unknown */ = {isa = PBXFileReference; lastKnownFileType = file; name = Unknown; path = ../../../Downloads/Unknown; sourceTree = "<group>"; };
 		710ACDAF16CD5F85009C844D /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		710ACDB116CD601A009C844D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		711E6A2716CAAD7B005648D6 /* CoeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +45,8 @@
 		711E6A4416CAAD7C005648D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		711E6A4616CAAD7C005648D6 /* CoeMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoeMasterViewController.h; sourceTree = "<group>"; };
 		711E6A4716CAAD7C005648D6 /* CoeMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoeMasterViewController.m; sourceTree = "<group>"; };
+		E8D562F816D19A1D00E43E26 /* CoeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoeMapViewController.h; sourceTree = "<group>"; };
+		E8D562F916D19A1D00E43E26 /* CoeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoeMapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +100,8 @@
 				711E6A3A16CAAD7B005648D6 /* CoeAppDelegate.h */,
 				711E6A3B16CAAD7B005648D6 /* CoeAppDelegate.m */,
 				711E6A4316CAAD7C005648D6 /* MainStoryboard.storyboard */,
+				E8D562F816D19A1D00E43E26 /* CoeMapViewController.h */,
+				E8D562F916D19A1D00E43E26 /* CoeMapViewController.m */,
 				71029B0516CABE240091C08C /* CoeWebViewController.h */,
 				71029B0616CABE240091C08C /* CoeWebViewController.m */,
 				711E6A4616CAAD7C005648D6 /* CoeMasterViewController.h */,
@@ -115,9 +114,6 @@
 		711E6A3216CAAD7B005648D6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				710ACD9216CD58C2009C844D /* arrow-pointing-left.jpg */,
-				710ACD9316CD58C2009C844D /* Unknown */,
-				71029B0316CABCB40091C08C /* coe_college_logo.jpg */,
 				711E6A3316CAAD7B005648D6 /* CoeApp-Info.plist */,
 				711E6A3416CAAD7B005648D6 /* InfoPlist.strings */,
 				711E6A3716CAAD7B005648D6 /* main.m */,
@@ -186,9 +182,6 @@
 				711E6A4016CAAD7B005648D6 /* Default@2x.png in Resources */,
 				711E6A4216CAAD7C005648D6 /* Default-568h@2x.png in Resources */,
 				711E6A4516CAAD7C005648D6 /* MainStoryboard.storyboard in Resources */,
-				71029B0416CABCB40091C08C /* coe_college_logo.jpg in Resources */,
-				710ACD9416CD58C2009C844D /* arrow-pointing-left.jpg in Resources */,
-				710ACD9516CD58C2009C844D /* Unknown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +196,7 @@
 				711E6A3C16CAAD7B005648D6 /* CoeAppDelegate.m in Sources */,
 				711E6A4816CAAD7C005648D6 /* CoeMasterViewController.m in Sources */,
 				71029B0716CABE240091C08C /* CoeWebViewController.m in Sources */,
+				E8D562FA16D19A1D00E43E26 /* CoeMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

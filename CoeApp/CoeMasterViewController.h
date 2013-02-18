@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @interface CoeMasterViewController : UITableViewController
 - (IBAction)cancel:(UIStoryboardSegue *)segue;
