@@ -23,6 +23,7 @@
 		711E6A4816CAAD7C005648D6 /* CoeMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711E6A4716CAAD7C005648D6 /* CoeMasterViewController.m */; };
 		71D5653816D1D6DF0010F498 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D5653716D1D6DF0010F498 /* TwitterViewController.m */; };
 		E8D562FA16D19A1D00E43E26 /* CoeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D562F916D19A1D00E43E26 /* CoeMapViewController.m */; };
+		E8F1302616D1DA9C00C026B0 /* CoeDonationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F1302516D1DA9C00C026B0 /* CoeDonationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		71D5653716D1D6DF0010F498 /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
 		E8D562F816D19A1D00E43E26 /* CoeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoeMapViewController.h; sourceTree = "<group>"; };
 		E8D562F916D19A1D00E43E26 /* CoeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoeMapViewController.m; sourceTree = "<group>"; };
+		E8F1302416D1DA9C00C026B0 /* CoeDonationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoeDonationViewController.h; sourceTree = "<group>"; };
+		E8F1302516D1DA9C00C026B0 /* CoeDonationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoeDonationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				E8D562F816D19A1D00E43E26 /* CoeMapViewController.h */,
 				E8D562F916D19A1D00E43E26 /* CoeMapViewController.m */,
 				71029B0516CABE240091C08C /* CoeWebViewController.h */,
+				E8F1302416D1DA9C00C026B0 /* CoeDonationViewController.h */,
+				E8F1302516D1DA9C00C026B0 /* CoeDonationViewController.m */,
 				71029B0616CABE240091C08C /* CoeWebViewController.m */,
 				711E6A4616CAAD7C005648D6 /* CoeMasterViewController.h */,
 				711E6A4716CAAD7C005648D6 /* CoeMasterViewController.m */,
@@ -203,6 +208,7 @@
 				71029B0716CABE240091C08C /* CoeWebViewController.m in Sources */,
 				E8D562FA16D19A1D00E43E26 /* CoeMapViewController.m in Sources */,
 				71D5653816D1D6DF0010F498 /* TwitterViewController.m in Sources */,
+				E8F1302616D1DA9C00C026B0 /* CoeDonationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

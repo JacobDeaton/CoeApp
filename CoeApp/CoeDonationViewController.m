@@ -1,28 +1,32 @@
 //
-//  CoeWebViewController.m
+//  CoeDonationViewController.m
 //  CoeApp
 //
-//  Created by TIMOTHY AHLINE on 2/12/13.
+//  Created by JACOB DEATON on 2/17/13.
 //  Copyright (c) 2013 TIMOTHY AHLINE. All rights reserved.
 //
-#import "CoeMasterViewController.h"
-#import "CoeWebViewController.h"
 
-@interface CoeWebViewController ()
+#import "CoeDonationViewController.h"
+#import "CoeMasterViewController.h"
+
+@interface CoeDonationViewController ()
 
 @end
 
-@implementation CoeWebViewController
+@implementation CoeDonationViewController
+
+
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSURL *myURL = [NSURL URLWithString:@"http://coe.edu"];
+    NSURL *myURL = [NSURL URLWithString:@"http://www.coe.edu/development/coefund/onlinegiving"];
     NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
     
-    [myWebView loadRequest:myRequest];
+    [DonationWebView loadRequest:myRequest];
 }
+
 
 - (void)didReceiveMemoryWarning
 {
