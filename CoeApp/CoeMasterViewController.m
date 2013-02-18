@@ -8,6 +8,7 @@
 
 #import "CoeMasterViewController.h"
 #import "CoeWebViewController.h"
+#import "CoeMapViewController.h"
 
 @interface CoeMasterViewController () {
     NSMutableArray *_objects;
