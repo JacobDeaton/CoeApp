@@ -116,6 +116,28 @@
             </objects>
             <point key="canvasLocation" x="466" y="748"/>
         </scene>
+        <!--Twitter View Controller-->
+        <scene sceneID="P81-0F-Dmv">
+            <objects>
+                <viewController id="IiE-Ug-mQf" customClass="TwitterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9cI-Yt-mFd">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TLv-Cs-JU4">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="OBE-FM-GfF">
+                            <connections>
+                                <segue destination="ZOk-5w-AOW" kind="unwind" unwindAction="cancel:" id="eNN-VA-glU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cex-00-GLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ZOk-5w-AOW" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="748"/>
+        </scene>
         <!--Coe Master View Controller - Master-->
         <scene sceneID="18">
             <objects>
@@ -175,7 +197,7 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <state key="normal" title="Coe Map">
-                                                        <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <state key="highlighted">
@@ -191,6 +213,37 @@
                                         <constraints>
                                             <constraint firstItem="B21-oP-aJV" firstAttribute="top" secondItem="piv-VN-L81" secondAttribute="top" constant="1" id="L4h-Wh-8Te"/>
                                             <constraint firstItem="B21-oP-aJV" firstAttribute="centerX" secondItem="piv-VN-L81" secondAttribute="centerX" type="default" id="T1T-v9-ZmS"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="46" id="Nc3-HJ-oCx">
+                                        <rect key="frame" x="0.0" y="312" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K90-cN-m5f">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="184" id="fkp-EJ-bD1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" title="Coe Twitter">
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="IiE-Ug-mQf" kind="push" identifier="ShowTwitter" id="E3j-my-Lfc"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="K90-cN-m5f" firstAttribute="centerX" secondItem="Nc3-HJ-oCx" secondAttribute="centerX" type="default" id="She-kb-g0n"/>
+                                            <constraint firstItem="K90-cN-m5f" firstAttribute="top" secondItem="Nc3-HJ-oCx" secondAttribute="top" constant="1" id="anI-yU-3Aq"/>
                                         </constraints>
                                     </tableViewCell>
                                 </cells>

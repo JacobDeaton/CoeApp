@@ -21,6 +21,7 @@
 		711E6A4216CAAD7C005648D6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 711E6A4116CAAD7C005648D6 /* Default-568h@2x.png */; };
 		711E6A4516CAAD7C005648D6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711E6A4316CAAD7C005648D6 /* MainStoryboard.storyboard */; };
 		711E6A4816CAAD7C005648D6 /* CoeMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711E6A4716CAAD7C005648D6 /* CoeMasterViewController.m */; };
+		71D5653816D1D6DF0010F498 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D5653716D1D6DF0010F498 /* TwitterViewController.m */; };
 		E8D562FA16D19A1D00E43E26 /* CoeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D562F916D19A1D00E43E26 /* CoeMapViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,8 @@
 		711E6A4416CAAD7C005648D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		711E6A4616CAAD7C005648D6 /* CoeMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoeMasterViewController.h; sourceTree = "<group>"; };
 		711E6A4716CAAD7C005648D6 /* CoeMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoeMasterViewController.m; sourceTree = "<group>"; };
+		71D5653616D1D6DF0010F498 /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
+		71D5653716D1D6DF0010F498 /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
 		E8D562F816D19A1D00E43E26 /* CoeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoeMapViewController.h; sourceTree = "<group>"; };
 		E8D562F916D19A1D00E43E26 /* CoeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoeMapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +103,8 @@
 				711E6A3A16CAAD7B005648D6 /* CoeAppDelegate.h */,
 				711E6A3B16CAAD7B005648D6 /* CoeAppDelegate.m */,
 				711E6A4316CAAD7C005648D6 /* MainStoryboard.storyboard */,
+				71D5653616D1D6DF0010F498 /* TwitterViewController.h */,
+				71D5653716D1D6DF0010F498 /* TwitterViewController.m */,
 				E8D562F816D19A1D00E43E26 /* CoeMapViewController.h */,
 				E8D562F916D19A1D00E43E26 /* CoeMapViewController.m */,
 				71029B0516CABE240091C08C /* CoeWebViewController.h */,
@@ -197,6 +202,7 @@
 				711E6A4816CAAD7C005648D6 /* CoeMasterViewController.m in Sources */,
 				71029B0716CABE240091C08C /* CoeWebViewController.m in Sources */,
 				E8D562FA16D19A1D00E43E26 /* CoeMapViewController.m in Sources */,
+				71D5653816D1D6DF0010F498 /* TwitterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
