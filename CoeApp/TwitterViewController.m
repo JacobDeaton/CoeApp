@@ -7,6 +7,8 @@
 //
 
 #import "TwitterViewController.h"
+#import "CoeMasterViewController.h"
+
 
 @interface TwitterViewController ()
 
@@ -16,20 +18,11 @@
 
 
 
- // https://dev.twitter.com/docs/api/1/get/statuses/user_timeline
 
 
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
 
 @end

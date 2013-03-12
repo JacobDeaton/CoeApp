@@ -235,7 +235,7 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="IiE-Ug-mQf" kind="push" identifier="ShowTwitter" id="E3j-my-Lfc"/>
+                                                        <segue destination="IiE-Ug-mQf" kind="push" identifier="Segey" id="E3j-my-Lfc"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -331,44 +331,6 @@
     <resources>
         <image name="coe_college_logo.jpg" width="804" height="450"/>
     </resources>
-    <classes>
-        <class className="CoeDonationViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoeDonationViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="DonationWebView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="CoeMapViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoeMapViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="CoeMasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoeMasterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:" candidateClass="UIStoryboardSegue"/>
-            </relationships>
-        </class>
-        <class className="CoeWebViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoeWebViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="myWebView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="TwitterViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TwitterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="getPublicTimeline:"/>
-            </relationships>
-        </class>
-        <class className="UIStoryboardSegue" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

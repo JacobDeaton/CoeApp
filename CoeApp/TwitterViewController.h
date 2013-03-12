@@ -11,7 +11,6 @@
 
 @interface TwitterViewController : UIViewController
 
-- (IBAction)getPublicTimeline:(id)sender;
 
 
 @end

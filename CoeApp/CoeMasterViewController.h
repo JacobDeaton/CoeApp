@@ -11,5 +11,6 @@
 
 @interface CoeMasterViewController : UITableViewController
 - (IBAction)cancel:(UIStoryboardSegue *)segue;
+@property(nonatomic, readonly, getter=isLoading) BOOL dragging;
 
 @end
