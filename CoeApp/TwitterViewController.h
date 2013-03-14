@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Twitter/Twitter.h>
+#import <Accounts/Accounts.h>
+#import <Social/Social.h>
 
-@interface TwitterViewController : UIViewController
-
-
+@interface TwitterViewController :UIViewController
+<UITableViewDataSource, UITableViewDelegate>
 
 @end

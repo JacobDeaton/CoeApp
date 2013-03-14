@@ -116,27 +116,35 @@
             </objects>
             <point key="canvasLocation" x="466" y="748"/>
         </scene>
-        <!--Twitter View Controller-->
-        <scene sceneID="P81-0F-Dmv">
+        <!--Coe Master View Controller-->
+        <scene sceneID="yZY-Hc-IGO">
             <objects>
-                <viewController id="IiE-Ug-mQf" customClass="TwitterViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9cI-Yt-mFd">
+                <tableViewController id="LtU-Oa-JNn" customClass="CoeMasterViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="U41-MI-N5z">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="TLv-Cs-JU4">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="OBE-FM-GfF">
-                            <connections>
-                                <segue destination="ZOk-5w-AOW" kind="unwind" unwindAction="cancel:" id="eNN-VA-glU"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cex-00-GLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="ZOk-5w-AOW" userLabel="Exit" sceneMemberID="exit"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="BL4-dM-vHb">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LtU-Oa-JNn" id="Avw-uT-n92"/>
+                            <outlet property="delegate" destination="LtU-Oa-JNn" id="yAX-q8-pIB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="1z0-bI-7El"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qAm-3f-Czd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="748"/>
+            <point key="canvasLocation" x="938" y="746"/>
         </scene>
         <!--Coe Master View Controller - Master-->
         <scene sceneID="18">
@@ -235,7 +243,7 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="IiE-Ug-mQf" kind="push" identifier="Segey" id="E3j-my-Lfc"/>
+                                                        <segue destination="LtU-Oa-JNn" kind="push" id="U4D-Ik-RSd"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -331,6 +339,38 @@
     <resources>
         <image name="coe_college_logo.jpg" width="804" height="450"/>
     </resources>
+    <classes>
+        <class className="CoeDonationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoeDonationViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="DonationWebView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="CoeMapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoeMapViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="CoeMasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoeMasterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:" candidateClass="UIStoryboardSegue"/>
+            </relationships>
+        </class>
+        <class className="CoeWebViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoeWebViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="myWebView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UIStoryboardSegue" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

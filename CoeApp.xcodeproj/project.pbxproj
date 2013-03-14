@@ -22,6 +22,8 @@
 		711E6A4516CAAD7C005648D6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711E6A4316CAAD7C005648D6 /* MainStoryboard.storyboard */; };
 		711E6A4816CAAD7C005648D6 /* CoeMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711E6A4716CAAD7C005648D6 /* CoeMasterViewController.m */; };
 		71D5653816D1D6DF0010F498 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D5653716D1D6DF0010F498 /* TwitterViewController.m */; };
+		71EFBB3C16F22FF00048C0E3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EFBB3B16F22FF00048C0E3 /* Social.framework */; };
+		71EFBB3F16F231B00048C0E3 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EFBB3E16F231B00048C0E3 /* Accounts.framework */; };
 		E8D562FA16D19A1D00E43E26 /* CoeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D562F916D19A1D00E43E26 /* CoeMapViewController.m */; };
 		E8F1302616D1DA9C00C026B0 /* CoeDonationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F1302516D1DA9C00C026B0 /* CoeDonationViewController.m */; };
 /* End PBXBuildFile section */
@@ -49,6 +51,8 @@
 		711E6A4716CAAD7C005648D6 /* CoeMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoeMasterViewController.m; sourceTree = "<group>"; };
 		71D5653616D1D6DF0010F498 /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
 		71D5653716D1D6DF0010F498 /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
+		71EFBB3B16F22FF00048C0E3 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		71EFBB3E16F231B00048C0E3 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		E8D562F816D19A1D00E43E26 /* CoeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoeMapViewController.h; sourceTree = "<group>"; };
 		E8D562F916D19A1D00E43E26 /* CoeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoeMapViewController.m; sourceTree = "<group>"; };
 		E8F1302416D1DA9C00C026B0 /* CoeDonationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoeDonationViewController.h; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71EFBB3F16F231B00048C0E3 /* Accounts.framework in Frameworks */,
+				71EFBB3C16F22FF00048C0E3 /* Social.framework in Frameworks */,
 				710ACDB216CD601A009C844D /* MapKit.framework in Frameworks */,
 				710ACDB016CD5F85009C844D /* Twitter.framework in Frameworks */,
 				711E6A2C16CAAD7B005648D6 /* UIKit.framework in Frameworks */,
@@ -91,6 +97,8 @@
 		711E6A2A16CAAD7B005648D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				71EFBB3E16F231B00048C0E3 /* Accounts.framework */,
+				71EFBB3B16F22FF00048C0E3 /* Social.framework */,
 				710ACDB116CD601A009C844D /* MapKit.framework */,
 				710ACDAF16CD5F85009C844D /* Twitter.framework */,
 				711E6A2B16CAAD7B005648D6 /* UIKit.framework */,
