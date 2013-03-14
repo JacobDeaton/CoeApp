@@ -10,7 +10,12 @@
 #import <Accounts/Accounts.h>
 #import <Social/Social.h>
 
-@interface TwitterViewController :UIViewController
-<UITableViewDataSource, UITableViewDelegate>
+
+@interface TwitterViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITableView *tweetTableView;
+
+@property (strong, nonatomic) NSArray * dataSource;
+
 
 @end

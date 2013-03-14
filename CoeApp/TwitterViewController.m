@@ -7,8 +7,6 @@
 //
 
 #import "TwitterViewController.h"
-#import "CoeMasterViewController.h"
-
 
 @interface TwitterViewController ()
 

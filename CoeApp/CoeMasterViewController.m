@@ -9,6 +9,7 @@
 #import "CoeMasterViewController.h"
 #import "CoeWebViewController.h"
 #import "CoeMapViewController.h"
+#import "TwitterViewController.h"
 
 
 @interface CoeMasterViewController () {
