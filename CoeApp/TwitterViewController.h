@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Accounts/Accounts.h>
 #import <Social/Social.h>
+#import <Twitter/twitter.h>
 
 
 @interface TwitterViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
