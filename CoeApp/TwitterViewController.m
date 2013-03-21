@@ -38,13 +38,13 @@
              if ([arrayOfAccounts count] > 0)
              {
                  ACAccount *twitterAccount = [arrayOfAccounts lastObject];
-                 
-                 NSURL *requestURL = [NSURL URLWithString:@"https://api.twitter.com/1/lists.json?user_id=213308859"];
-                 
+                
+               NSURL *requestURL = [NSURL URLWithString:@"https://api.twitter.com/1.1/lists/statuses.json"];
+
                  NSMutableDictionary *parameters =
                  [[NSMutableDictionary alloc] init];
-                 [parameters setObject:@"20" forKey:@"count"];
-                 [parameters setObject:@"1" forKey:@"include_entities"];
+                 [parameters setObject:@"coe-app" forKey:@"slug"];
+                 [parameters setObject:@"kohawk57" forKey:@"owner_screen_name"];
                  
                  SLRequest *postRequest = [SLRequest
                                            requestForServiceType:SLServiceTypeTwitter
@@ -57,6 +57,7 @@
                   ^(NSData *responseData, NSHTTPURLResponse
                     *urlResponse, NSError *error)
                   {
+                      NSLog(@"responsedata: %@", [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding ]);
                       self.dataSource = [NSJSONSerialization
                                          JSONObjectWithData:responseData
                                          options:NSJSONReadingMutableLeaves
