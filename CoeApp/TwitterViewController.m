@@ -19,7 +19,6 @@
     [super viewDidLoad];
     [self getTimeLine];
     
-    
 }
 
 - (void)getTimeLine {
@@ -93,11 +92,23 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc]
                 initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+
     }
     
     NSDictionary *tweet = _dataSource[[indexPath row]];
-    
     cell.textLabel.text = tweet[@"text"];
+    
+    
+    [cell.textLabel setNumberOfLines:0];
+    [cell.detailTextLabel setNumberOfLines:10];
+    [cell.textLabel setTextColor:[UIColor darkGrayColor]];
+    [cell.textLabel setShadowColor:[UIColor whiteColor]];
+    [cell.textLabel setShadowOffset:CGSizeMake(0.5, 0.5)];
+    [[cell textLabel] setFont:[UIFont systemFontOfSize: 14.0]];
+    [cell.detailTextLabel setTextColor:[UIColor blackColor]];
+    [cell.textLabel setUserInteractionEnabled:YES];
+    [cell.contentView setMultipleTouchEnabled:YES];
+
     return cell;
 }
 
