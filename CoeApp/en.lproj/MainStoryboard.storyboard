@@ -77,7 +77,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYS-Dj-8h9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="sRK-bc-sdl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-3" y="746"/>
+            <point key="canvasLocation" x="-1" y="891"/>
         </scene>
         <!--Coe Map View Controller-->
         <scene sceneID="Zhz-nE-pbD">
@@ -120,10 +120,21 @@
         <scene sceneID="TeO-IQ-wQV">
             <objects>
                 <tableViewController id="D8b-Hn-IYx" customClass="TwitterViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gd7-Qw-z7f">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="82" sectionHeaderHeight="22" sectionFooterHeight="22" id="gd7-Qw-z7f">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleAspectFit" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tweetCell" rowHeight="82" id="TE8-Lr-M1n">
+                                <rect key="frame" x="0.0" y="22" width="320" height="82"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="D8b-Hn-IYx" id="Io8-a5-O9e"/>
                             <outlet property="delegate" destination="D8b-Hn-IYx" id="n6M-fI-V4U"/>

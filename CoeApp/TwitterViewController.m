@@ -59,7 +59,7 @@
                       NSLog(@"responsedata: %@", [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding ]);
                       self.dataSource = [NSJSONSerialization
                                          JSONObjectWithData:responseData
-                                         options:NSJSONReadingMutableLeaves
+                                         options: NSJSONReadingMutableLeaves
                                          error:&error];
                       
                       if (self.dataSource.count != 0) {
@@ -84,7 +84,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"tweetCell";
     
     UITableViewCell *cell = [self.tweetTableView
                              dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -96,18 +96,21 @@
     }
     
     NSDictionary *tweet = _dataSource[[indexPath row]];
+    
+
     cell.textLabel.text = tweet[@"text"];
     
     
     [cell.textLabel setNumberOfLines:0];
     [cell.detailTextLabel setNumberOfLines:10];
-    [cell.textLabel setTextColor:[UIColor darkGrayColor]];
+    [cell.textLabel setTextColor:[UIColor blackColor]];
     [cell.textLabel setShadowColor:[UIColor whiteColor]];
     [cell.textLabel setShadowOffset:CGSizeMake(0.5, 0.5)];
     [[cell textLabel] setFont:[UIFont systemFontOfSize: 14.0]];
     [cell.detailTextLabel setTextColor:[UIColor blackColor]];
     [cell.textLabel setUserInteractionEnabled:YES];
     [cell.contentView setMultipleTouchEnabled:YES];
+    
 
     return cell;
 }
