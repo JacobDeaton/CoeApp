@@ -69,9 +69,12 @@
                       }
                   }];
              }
-         } else {
-             // Handle failure to get account access
          }
+         else {
+             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Please sign into twitter to see tweets" delegate:Nil cancelButtonTitle:@"Okay" otherButtonTitles:Nil, Nil];
+             
+             [alert performSelectorOnMainThread:@selector(show) withObject:nil waitUntilDone:YES];
+        }
      }];
 }
 

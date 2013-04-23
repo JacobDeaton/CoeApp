@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -167,19 +167,20 @@
                         <sections>
                             <tableViewSection id="zHD-d0-iwK">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="46" id="Jx5-uV-w8i">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="125" id="Jx5-uV-w8i">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fi-kL-7bR">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="184" id="c8U-Hp-Foc"/>
+                                                        <constraint firstAttribute="height" constant="123" id="ySf-95-If7"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="Mobile Website">
+                                                    <state key="normal" image="coe_logo.jpg">
                                                         <color key="titleColor" red="0.72051205839999999" green="0.14406517690000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -190,27 +191,39 @@
                                                         <segue destination="jh7-wO-9pN" kind="push" identifier="showWeb" id="2j3-wg-lfz"/>
                                                     </connections>
                                                 </button>
+                                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Website" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="62o-4x-xDm">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="BoL-UZ-Rsp"/>
+                                                        <constraint firstAttribute="width" constant="97" id="hNE-dI-zJB"/>
+                                                    </constraints>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="62o-4x-xDm" firstAttribute="top" secondItem="Jx5-uV-w8i" secondAttribute="top" constant="13" id="DQf-uK-gNq"/>
+                                            <constraint firstItem="6fi-kL-7bR" firstAttribute="centerY" secondItem="Jx5-uV-w8i" secondAttribute="centerY" type="default" id="H53-pC-Tvp"/>
+                                            <constraint firstItem="62o-4x-xDm" firstAttribute="leading" secondItem="Jx5-uV-w8i" secondAttribute="leading" constant="235" id="KWf-FM-CQ5"/>
                                             <constraint firstItem="6fi-kL-7bR" firstAttribute="centerX" secondItem="Jx5-uV-w8i" secondAttribute="centerX" type="default" id="hdY-6N-lxf"/>
-                                            <constraint firstItem="6fi-kL-7bR" firstAttribute="top" secondItem="Jx5-uV-w8i" secondAttribute="top" constant="1" id="zZe-fB-sRd"/>
                                         </constraints>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="46" id="piv-VN-L81">
-                                        <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="125" id="piv-VN-L81">
+                                        <rect key="frame" x="0.0" y="125" width="320" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B21-oP-aJV">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="184" id="ypM-rG-H4v"/>
+                                                        <constraint firstAttribute="height" constant="113" id="5cx-Rb-4c3"/>
+                                                        <constraint firstAttribute="width" constant="194" id="z7E-gR-CPU"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="Coe Map">
+                                                    <state key="normal" image="coesign_steeple.jpg">
                                                         <color key="titleColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -221,27 +234,39 @@
                                                         <segue destination="B5e-vD-aGO" kind="push" identifier="Show Map" id="p6N-mL-q1y"/>
                                                     </connections>
                                                 </button>
+                                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Coe Map" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oLb-ZD-bIb">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="97" id="qKd-KY-DzW"/>
+                                                        <constraint firstAttribute="height" constant="30" id="xbH-7n-6bi"/>
+                                                    </constraints>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="B21-oP-aJV" firstAttribute="top" secondItem="piv-VN-L81" secondAttribute="top" constant="1" id="L4h-Wh-8Te"/>
-                                            <constraint firstItem="B21-oP-aJV" firstAttribute="centerX" secondItem="piv-VN-L81" secondAttribute="centerX" type="default" id="T1T-v9-ZmS"/>
+                                            <constraint firstItem="B21-oP-aJV" firstAttribute="top" secondItem="piv-VN-L81" secondAttribute="top" constant="5" id="UT8-KB-b6o"/>
+                                            <constraint firstItem="B21-oP-aJV" firstAttribute="top" secondItem="oLb-ZD-bIb" secondAttribute="top" type="default" id="gPy-IA-eLf"/>
+                                            <constraint firstItem="B21-oP-aJV" firstAttribute="leading" secondItem="piv-VN-L81" secondAttribute="leading" constant="61" id="j6h-ud-kGc"/>
+                                            <constraint firstItem="oLb-ZD-bIb" firstAttribute="leading" secondItem="piv-VN-L81" secondAttribute="leading" constant="236" id="y9S-78-qjC"/>
                                         </constraints>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="46" id="Nc3-HJ-oCx">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="46"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="128" id="Nc3-HJ-oCx">
+                                        <rect key="frame" x="0.0" y="250" width="320" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K90-cN-m5f">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="184" id="fkp-EJ-bD1"/>
+                                                        <constraint firstAttribute="width" constant="232" id="KyK-w2-wz9"/>
+                                                        <constraint firstAttribute="height" constant="107" id="yDu-hu-5Nz"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="Coe Twitter">
+                                                    <state key="normal" image="coe sports.png">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -252,27 +277,39 @@
                                                         <segue destination="D8b-Hn-IYx" kind="push" id="3Gm-p4-Gkw"/>
                                                     </connections>
                                                 </button>
+                                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Twitter" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AOx-K0-IKp">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="97" id="4b5-DP-PeN"/>
+                                                        <constraint firstAttribute="height" constant="30" id="ANp-2E-sGX"/>
+                                                    </constraints>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="K90-cN-m5f" firstAttribute="centerX" secondItem="Nc3-HJ-oCx" secondAttribute="centerX" type="default" id="She-kb-g0n"/>
-                                            <constraint firstItem="K90-cN-m5f" firstAttribute="top" secondItem="Nc3-HJ-oCx" secondAttribute="top" constant="1" id="anI-yU-3Aq"/>
+                                            <constraint firstItem="K90-cN-m5f" firstAttribute="centerX" secondItem="Nc3-HJ-oCx" secondAttribute="centerX" type="default" id="Vx8-wH-mju"/>
+                                            <constraint firstItem="AOx-K0-IKp" firstAttribute="top" secondItem="Nc3-HJ-oCx" secondAttribute="top" constant="20" type="default" id="Yxw-2b-xVa"/>
+                                            <constraint firstItem="K90-cN-m5f" firstAttribute="top" secondItem="Nc3-HJ-oCx" secondAttribute="top" constant="10" id="Z0o-LO-v6h"/>
+                                            <constraint firstItem="AOx-K0-IKp" firstAttribute="leading" secondItem="Nc3-HJ-oCx" secondAttribute="leading" constant="234" id="bpD-lG-Fk5"/>
                                         </constraints>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="46" id="Ls6-gP-xRE">
-                                        <rect key="frame" x="0.0" y="138" width="320" height="46"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="152" id="Ls6-gP-xRE">
+                                        <rect key="frame" x="0.0" y="378" width="320" height="152"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="151"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEy-Vg-YiR">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="184" id="jB7-Sz-a6E"/>
+                                                        <constraint firstAttribute="width" constant="199" id="D3a-9E-PgR"/>
+                                                        <constraint firstAttribute="height" constant="109" id="F68-h3-gOJ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" title="Donate To Coe">
+                                                    <state key="normal" image="thecoefund.jpg">
                                                         <color key="titleColor" red="1" green="0.50596859097944391" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -283,12 +320,22 @@
                                                         <segue destination="6g6-Tv-EnO" kind="push" id="MiP-yG-gmQ"/>
                                                     </connections>
                                                 </button>
+                                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Donations" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ake-q7-dGl">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="97" id="13T-Ot-WOu"/>
+                                                        <constraint firstAttribute="height" constant="30" id="yjW-Ld-8gJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="MEy-Vg-YiR" firstAttribute="top" secondItem="Ls6-gP-xRE" secondAttribute="top" constant="1" id="DK1-HB-6jt"/>
-                                            <constraint firstItem="MEy-Vg-YiR" firstAttribute="centerX" secondItem="Ls6-gP-xRE" secondAttribute="centerX" type="default" id="yAz-fB-0Ru"/>
+                                            <constraint firstItem="ake-q7-dGl" firstAttribute="leading" secondItem="Ls6-gP-xRE" secondAttribute="leading" constant="233" id="6bV-k2-dn1"/>
+                                            <constraint firstItem="ake-q7-dGl" firstAttribute="top" secondItem="MEy-Vg-YiR" secondAttribute="top" type="default" id="DTb-2C-u6V"/>
+                                            <constraint firstItem="MEy-Vg-YiR" firstAttribute="top" secondItem="Ls6-gP-xRE" secondAttribute="top" constant="6" id="ZL2-7r-Kze"/>
+                                            <constraint firstItem="MEy-Vg-YiR" firstAttribute="centerX" secondItem="Ls6-gP-xRE" secondAttribute="centerX" type="default" id="ebX-g8-6XT"/>
                                         </constraints>
                                     </tableViewCell>
                                 </cells>
@@ -299,7 +346,7 @@
                             <outlet property="delegate" destination="12" id="15"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="36"/>
+                    <navigationItem key="navigationItem" title="The Coe App" id="36"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
             </objects>
@@ -342,6 +389,50 @@
             <point key="canvasLocation" x="938" y="55"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="coe sports.png" width="340" height="136"/>
+        <image name="coe_logo.jpg" width="607" height="355"/>
+        <image name="coesign_steeple.jpg" width="450" height="357"/>
+        <image name="thecoefund.jpg" width="250" height="169"/>
+    </resources>
+    <classes>
+        <class className="CoeDonationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoeDonationViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="DonationWebView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="CoeMapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoeMapViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="CoeMasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoeMasterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:" candidateClass="UIStoryboardSegue"/>
+            </relationships>
+        </class>
+        <class className="CoeWebViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoeWebViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="myWebView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TwitterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TwitterViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tweetTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="UIStoryboardSegue" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

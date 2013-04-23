@@ -37,11 +37,6 @@
     
 }
 
-- (void)viewWillAppear:(BOOL)animated { // a litle method added extra to re write the title to 'Tweets' from 'Back'. No easier way to do it AFIK!
-    [super viewWillAppear:animated];
-    [self setTitle:@"Tweets"]; // this resets the title on return from a View
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -65,10 +60,10 @@
 //    return 1;
 //}
 
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//    return _objects.count;
-//}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 4;
+}
 
 //- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 //{

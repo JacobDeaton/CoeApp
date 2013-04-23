@@ -24,10 +24,30 @@
     [super viewDidLoad];
 
 }
+-(MKAnnotationView *)mapView:(MKMapView *)mV viewForAnnotation:(id <MKAnnotation>)annotation
+{
+    MKAnnotationView *pinView = nil;
+    if(annotation != mapView.userLocation)
+    {
+        static NSString *defaultPinID = @"com.invasivecode.pin";
+        pinView = (MKAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:defaultPinID];
+        if ( pinView == nil )
+            pinView = [[MKAnnotationView alloc]
+                       initWithAnnotation:annotation reuseIdentifier:defaultPinID];
+        
+        pinView.canShowCallout = YES;
+        pinView.image = [UIImage imageNamed:@"coe sports.png"];    
+    }
+    else {
+        [mapView.userLocation setTitle:@"I am here"];
+    }
+    return pinView;
+}
+
 
 -(void)goLocation
 {
-    
+     
     
     //Create Region
     mapView.mapType= MKMapTypeSatellite;
@@ -49,6 +69,7 @@
     [AlumniHouseAnnotation setTitle:@"Clark Alumni House"];
     [self.mapView removeAnnotations:self.mapView.annotations];
     [self.mapView addAnnotation:AlumniHouseAnnotation];
+    
     
     CLLocationCoordinate2D StuartHall;
     StuartHall.latitude = 41.986291;
