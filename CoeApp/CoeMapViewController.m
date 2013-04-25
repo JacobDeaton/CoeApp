@@ -24,25 +24,7 @@
     [super viewDidLoad];
 
 }
--(MKAnnotationView *)mapView:(MKMapView *)mV viewForAnnotation:(id <MKAnnotation>)annotation
-{
-    MKAnnotationView *pinView = nil;
-    if(annotation != mapView.userLocation)
-    {
-        static NSString *defaultPinID = @"com.invasivecode.pin";
-        pinView = (MKAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:defaultPinID];
-        if ( pinView == nil )
-            pinView = [[MKAnnotationView alloc]
-                       initWithAnnotation:annotation reuseIdentifier:defaultPinID];
-        
-        pinView.canShowCallout = YES;
-        pinView.image = [UIImage imageNamed:@"coe sports.png"];    
-    }
-    else {
-        [mapView.userLocation setTitle:@"I am here"];
-    }
-    return pinView;
-}
+
 
 
 -(void)goLocation
