@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		71029B0716CABE240091C08C /* CoeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71029B0616CABE240091C08C /* CoeWebViewController.m */; };
+		710515F9172997CC00796DD5 /* background-pattern-006.gif in Resources */ = {isa = PBXBuildFile; fileRef = 710515F8172997CC00796DD5 /* background-pattern-006.gif */; };
 		710ACDB016CD5F85009C844D /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710ACDAF16CD5F85009C844D /* Twitter.framework */; };
 		710ACDB216CD601A009C844D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710ACDB116CD601A009C844D /* MapKit.framework */; };
 		711E6A2C16CAAD7B005648D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711E6A2B16CAAD7B005648D6 /* UIKit.framework */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		71029B0516CABE240091C08C /* CoeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoeWebViewController.h; sourceTree = "<group>"; };
 		71029B0616CABE240091C08C /* CoeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoeWebViewController.m; sourceTree = "<group>"; };
+		710515F8172997CC00796DD5 /* background-pattern-006.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "background-pattern-006.gif"; path = "../../../Downloads/background-pattern-006.gif"; sourceTree = "<group>"; };
 		710ACDAF16CD5F85009C844D /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		710ACDB116CD601A009C844D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		711E6A2716CAAD7B005648D6 /* CoeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +138,7 @@
 		711E6A3216CAAD7B005648D6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				710515F8172997CC00796DD5 /* background-pattern-006.gif */,
 				7154543217147C5C00EEE9C2 /* coe sports.png */,
 				71E1FC5D1726F46700A51C84 /* coe_logo.jpg */,
 				71E1FC591726F44600A51C84 /* thecoefund.jpg */,
@@ -208,6 +211,7 @@
 				71E1FC5A1726F44600A51C84 /* thecoefund.jpg in Resources */,
 				71E1FC5C1726F45800A51C84 /* coesign_steeple.jpg in Resources */,
 				71E1FC5E1726F46700A51C84 /* coe_logo.jpg in Resources */,
+				710515F9172997CC00796DD5 /* background-pattern-006.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

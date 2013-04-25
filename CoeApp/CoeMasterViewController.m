@@ -33,6 +33,14 @@
 
 - (void)viewDidLoad
 {
+    self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"background-pattern-006.gif"]];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(110, 100, 100, 50);
+    [button setTitle:@"Hello" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
     [super viewDidLoad];
     
 }

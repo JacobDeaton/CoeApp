@@ -29,11 +29,12 @@
     [account requestAccessToAccountsWithType:accountType
                                      options:nil completion:^(BOOL granted, NSError *error)
      {
+         NSLog(@"1");
          if (granted == YES)
          {
              NSArray *arrayOfAccounts = [account
                                          accountsWithAccountType:accountType];
-             
+             NSLog(@"2");
              if ([arrayOfAccounts count] > 0)
              {
                  ACAccount *twitterAccount = [arrayOfAccounts lastObject];
@@ -71,6 +72,7 @@
              }
          }
          else {
+             NSLog(@"3");
              UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Please sign into twitter to see tweets" delegate:Nil cancelButtonTitle:@"Okay" otherButtonTitles:Nil, Nil];
              
              [alert performSelectorOnMainThread:@selector(show) withObject:nil waitUntilDone:YES];
