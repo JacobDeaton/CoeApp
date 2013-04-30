@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		71029B0716CABE240091C08C /* CoeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71029B0616CABE240091C08C /* CoeWebViewController.m */; };
-		710515F9172997CC00796DD5 /* background-pattern-006.gif in Resources */ = {isa = PBXBuildFile; fileRef = 710515F8172997CC00796DD5 /* background-pattern-006.gif */; };
 		710ACDB016CD5F85009C844D /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710ACDAF16CD5F85009C844D /* Twitter.framework */; };
 		710ACDB216CD601A009C844D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710ACDB116CD601A009C844D /* MapKit.framework */; };
 		711E6A2C16CAAD7B005648D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711E6A2B16CAAD7B005648D6 /* UIKit.framework */; };
@@ -19,12 +18,8 @@
 		711E6A3C16CAAD7B005648D6 /* CoeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 711E6A3B16CAAD7B005648D6 /* CoeAppDelegate.m */; };
 		711E6A4516CAAD7C005648D6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711E6A4316CAAD7C005648D6 /* MainStoryboard.storyboard */; };
 		711E6A4816CAAD7C005648D6 /* CoeMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711E6A4716CAAD7C005648D6 /* CoeMasterViewController.m */; };
-		7154543317147C5C00EEE9C2 /* coe sports.png in Resources */ = {isa = PBXBuildFile; fileRef = 7154543217147C5C00EEE9C2 /* coe sports.png */; };
 		7154543517147EDF00EEE9C2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7154543417147EDF00EEE9C2 /* Default-568h@2x.png */; };
 		71D5653816D1D6DF0010F498 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D5653716D1D6DF0010F498 /* TwitterViewController.m */; };
-		71E1FC5A1726F44600A51C84 /* thecoefund.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71E1FC591726F44600A51C84 /* thecoefund.jpg */; };
-		71E1FC5C1726F45800A51C84 /* coesign_steeple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71E1FC5B1726F45800A51C84 /* coesign_steeple.jpg */; };
-		71E1FC5E1726F46700A51C84 /* coe_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71E1FC5D1726F46700A51C84 /* coe_logo.jpg */; };
 		71EFBB3C16F22FF00048C0E3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EFBB3B16F22FF00048C0E3 /* Social.framework */; };
 		71EFBB3F16F231B00048C0E3 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EFBB3E16F231B00048C0E3 /* Accounts.framework */; };
 		E8D562FA16D19A1D00E43E26 /* CoeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D562F916D19A1D00E43E26 /* CoeMapViewController.m */; };
@@ -34,7 +29,6 @@
 /* Begin PBXFileReference section */
 		71029B0516CABE240091C08C /* CoeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoeWebViewController.h; sourceTree = "<group>"; };
 		71029B0616CABE240091C08C /* CoeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoeWebViewController.m; sourceTree = "<group>"; };
-		710515F8172997CC00796DD5 /* background-pattern-006.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "background-pattern-006.gif"; path = "../../../Downloads/background-pattern-006.gif"; sourceTree = "<group>"; };
 		710ACDAF16CD5F85009C844D /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		710ACDB116CD601A009C844D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		711E6A2716CAAD7B005648D6 /* CoeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,13 +44,9 @@
 		711E6A4416CAAD7C005648D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		711E6A4616CAAD7C005648D6 /* CoeMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoeMasterViewController.h; sourceTree = "<group>"; };
 		711E6A4716CAAD7C005648D6 /* CoeMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoeMasterViewController.m; sourceTree = "<group>"; };
-		7154543217147C5C00EEE9C2 /* coe sports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "coe sports.png"; path = "../../../Downloads/coe sports.png"; sourceTree = "<group>"; };
 		7154543417147EDF00EEE9C2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		71D5653616D1D6DF0010F498 /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
 		71D5653716D1D6DF0010F498 /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
-		71E1FC591726F44600A51C84 /* thecoefund.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = thecoefund.jpg; path = ../../../Downloads/thecoefund.jpg; sourceTree = "<group>"; };
-		71E1FC5B1726F45800A51C84 /* coesign_steeple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coesign_steeple.jpg; path = ../../../Downloads/coesign_steeple.jpg; sourceTree = "<group>"; };
-		71E1FC5D1726F46700A51C84 /* coe_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coe_logo.jpg; path = ../../../Downloads/coe_logo.jpg; sourceTree = "<group>"; };
 		71EFBB3B16F22FF00048C0E3 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		71EFBB3E16F231B00048C0E3 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		E8D562F816D19A1D00E43E26 /* CoeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoeMapViewController.h; sourceTree = "<group>"; };
@@ -143,7 +133,6 @@
 				71E1FC5D1726F46700A51C84 /* coe_logo.jpg */,
 				71E1FC591726F44600A51C84 /* thecoefund.jpg */,
 				7154543417147EDF00EEE9C2 /* Default-568h@2x.png */,
-				71E1FC5B1726F45800A51C84 /* coesign_steeple.jpg */,
 				711E6A3316CAAD7B005648D6 /* CoeApp-Info.plist */,
 				711E6A3416CAAD7B005648D6 /* InfoPlist.strings */,
 				711E6A3716CAAD7B005648D6 /* main.m */,
@@ -206,12 +195,7 @@
 			files = (
 				711E6A3616CAAD7B005648D6 /* InfoPlist.strings in Resources */,
 				711E6A4516CAAD7C005648D6 /* MainStoryboard.storyboard in Resources */,
-				7154543317147C5C00EEE9C2 /* coe sports.png in Resources */,
 				7154543517147EDF00EEE9C2 /* Default-568h@2x.png in Resources */,
-				71E1FC5A1726F44600A51C84 /* thecoefund.jpg in Resources */,
-				71E1FC5C1726F45800A51C84 /* coesign_steeple.jpg in Resources */,
-				71E1FC5E1726F46700A51C84 /* coe_logo.jpg in Resources */,
-				710515F9172997CC00796DD5 /* background-pattern-006.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

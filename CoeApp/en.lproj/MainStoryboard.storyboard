@@ -83,21 +83,33 @@
         <scene sceneID="Zhz-nE-pbD">
             <objects>
                 <viewController id="B5e-vD-aGO" customClass="CoeMapViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0Uu-GZ-3Wg">
+                    <view key="view" contentMode="scaleToFill" id="UTg-qX-RDm">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="17n-bg-U6E">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vm-Z2-483">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="548" id="EKB-Zw-6ZF"/>
+                                    <constraint firstAttribute="height" constant="216" id="hjs-Sn-tf5"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="B5e-vD-aGO" id="gU0-EL-AvT"/>
+                                    <outlet property="delegate" destination="B5e-vD-aGO" id="DMv-FB-nj1"/>
+                                </connections>
+                            </pickerView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jUG-rT-v8I">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="5om-Xd-j7A"/>
                                 </constraints>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="17n-bg-U6E" firstAttribute="trailing" secondItem="0Uu-GZ-3Wg" secondAttribute="trailing" type="default" id="KhI-WJ-WY7"/>
-                            <constraint firstItem="17n-bg-U6E" firstAttribute="leading" secondItem="0Uu-GZ-3Wg" secondAttribute="leading" type="default" id="azP-k3-7N1"/>
-                            <constraint firstItem="17n-bg-U6E" firstAttribute="top" secondItem="0Uu-GZ-3Wg" secondAttribute="top" constant="-8" id="gfx-Pb-Qvm"/>
+                            <constraint firstItem="jUG-rT-v8I" firstAttribute="top" secondItem="UTg-qX-RDm" secondAttribute="top" constant="-6" id="5dg-y1-z4u"/>
+                            <constraint firstItem="jUG-rT-v8I" firstAttribute="leading" secondItem="UTg-qX-RDm" secondAttribute="leading" type="default" id="FKx-A3-Uzp"/>
+                            <constraint firstItem="4vm-Z2-483" firstAttribute="trailing" secondItem="UTg-qX-RDm" secondAttribute="trailing" type="default" id="I1W-OH-wTw"/>
+                            <constraint firstItem="4vm-Z2-483" firstAttribute="bottom" secondItem="UTg-qX-RDm" secondAttribute="bottom" type="default" id="bNm-X4-CoU"/>
+                            <constraint firstItem="jUG-rT-v8I" firstAttribute="trailing" secondItem="UTg-qX-RDm" secondAttribute="trailing" type="default" id="rLg-Na-25W"/>
+                            <constraint firstItem="4vm-Z2-483" firstAttribute="leading" secondItem="UTg-qX-RDm" secondAttribute="leading" type="default" id="zMW-1y-LFi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lbi-1L-Xkw">
@@ -108,7 +120,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="MapView" destination="17n-bg-U6E" id="aqq-31-DKD"/>
+                        <outlet property="UIPickerView" destination="4vm-Z2-483" id="b1m-VO-Uku"/>
+                        <outlet property="mapView" destination="jUG-rT-v8I" id="kvx-FA-OED"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pfr-mq-JRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -181,7 +194,7 @@
                                                         <constraint firstAttribute="height" constant="100" id="svS-yl-j0h"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" image="coe_logo.jpg">
+                                                    <state key="normal" image="Default-568h@2x.png">
                                                         <color key="titleColor" red="0.72051205839999999" green="0.14406517690000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -213,9 +226,9 @@
                                                         <constraint firstAttribute="width" constant="162" id="JgK-es-0mr"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" image="coesign_steeple.jpg">
+                                                    <state key="normal" image="Default-568h@2x.png">
                                                         <color key="titleColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" red="0.77076690049999996" green="0.465271349" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <state key="highlighted">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -246,7 +259,7 @@
                                                         <constraint firstAttribute="width" constant="166" id="gWe-hu-CBE"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" image="coe sports.png">
+                                                    <state key="normal" image="Default-568h@2x.png">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -278,7 +291,7 @@
                                                         <constraint firstAttribute="width" constant="164" id="PCh-Dl-TLr"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <state key="normal" image="thecoefund.jpg">
+                                                    <state key="normal" image="Default-568h@2x.png">
                                                         <color key="titleColor" red="1" green="0.50596859097944391" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -349,10 +362,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="coe sports.png" width="340" height="136"/>
-        <image name="coe_logo.jpg" width="607" height="355"/>
-        <image name="coesign_steeple.jpg" width="450" height="357"/>
-        <image name="thecoefund.jpg" width="250" height="169"/>
+        <image name="Default-568h@2x.png" width="640" height="1136"/>
     </resources>
     <classes>
         <class className="CoeDonationViewController" superclassName="UIViewController">
@@ -364,6 +374,8 @@
         <class className="CoeMapViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CoeMapViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="Building" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="UIPickerView" candidateClass="UIPickerView"/>
                 <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
             </relationships>
         </class>
