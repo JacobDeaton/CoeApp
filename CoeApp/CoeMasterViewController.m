@@ -36,13 +36,56 @@
     self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"background-pattern-006.gif"]];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(110, 100, 100, 50);
-    [button setTitle:@"Hello" forState:UIControlStateNormal];
+    button.frame = CGRectMake(200, 35, 100, 50);
+    [button setTitle:@"Website" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(buttonPressed) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
+    UIButton *button1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    button1.frame = CGRectMake(200, 152, 100, 50);
+    [button1 setTitle:@"Coe Map" forState:UIControlStateNormal];
+    [button1 addTarget:self action:@selector(buttonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button1];
+    
+    UIButton *button2 = [UIButton buttonWithType:UIButtonTypeCustom];
+    button2.frame = CGRectMake(200, 269, 100, 50);
+    [button2 setTitle:@"Twitter" forState:UIControlStateNormal];
+    [button2 addTarget:self action:@selector(buttonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button2];
+    
+    UIButton *button3 = [UIButton buttonWithType:UIButtonTypeCustom];
+    button3.frame = CGRectMake(200, 386, 100, 50);
+    [button3 setTitle:@"Donations" forState:UIControlStateNormal];
+    [button3 addTarget:self action:@selector(buttonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button3];
+    
+    [button3 addTarget:self action:@selector(donations:) forControlEvents:UIControlEventTouchUpInside];
+    [button2 addTarget:self action:@selector(twitter:) forControlEvents:UIControlEventTouchUpInside];
+    [button1 addTarget:self action:@selector(map:) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(website:) forControlEvents:UIControlEventTouchUpInside];
+    
     [super viewDidLoad];
     
+}
+
+-(void) donations:(id)sender
+{
+    [self performSegueWithIdentifier:@"donations" sender:self];
+}
+
+-(void) twitter:(id)sender
+{
+    [self performSegueWithIdentifier:@"twitter" sender:self];
+}
+
+-(void) website:(id)sender
+{
+    [self performSegueWithIdentifier:@"website" sender:self];
+}
+
+-(void) map:(id)sender
+{
+    [self performSegueWithIdentifier:@"map" sender:self];
 }
 
 - (void)didReceiveMemoryWarning

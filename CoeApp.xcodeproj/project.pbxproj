@@ -119,6 +119,7 @@
 			children = (
 				711E6A3A16CAAD7B005648D6 /* CoeAppDelegate.h */,
 				711E6A3B16CAAD7B005648D6 /* CoeAppDelegate.m */,
+				7154543217147C5C00EEE9C2 /* coe sports.png */,
 				711E6A4316CAAD7C005648D6 /* MainStoryboard.storyboard */,
 				71D5653616D1D6DF0010F498 /* TwitterViewController.h */,
 				71D5653716D1D6DF0010F498 /* TwitterViewController.m */,
@@ -139,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				710515F8172997CC00796DD5 /* background-pattern-006.gif */,
-				7154543217147C5C00EEE9C2 /* coe sports.png */,
 				71E1FC5D1726F46700A51C84 /* coe_logo.jpg */,
 				71E1FC591726F44600A51C84 /* thecoefund.jpg */,
 				7154543417147EDF00EEE9C2 /* Default-568h@2x.png */,

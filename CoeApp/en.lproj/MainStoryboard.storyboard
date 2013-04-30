@@ -189,26 +189,15 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="jh7-wO-9pN" kind="push" identifier="showWeb" id="2j3-wg-lfz"/>
+                                                        <segue destination="jh7-wO-9pN" kind="push" identifier="website" id="2j3-wg-lfz"/>
                                                     </connections>
                                                 </button>
-                                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Website" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="62o-4x-xDm">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="BoL-UZ-Rsp"/>
-                                                        <constraint firstAttribute="width" constant="97" id="hNE-dI-zJB"/>
-                                                    </constraints>
-                                                    <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="6fi-kL-7bR" firstAttribute="top" secondItem="Jx5-uV-w8i" secondAttribute="top" constant="13" id="4Rf-T3-p6u"/>
-                                            <constraint firstAttribute="trailing" secondItem="62o-4x-xDm" secondAttribute="trailing" constant="20" type="default" id="9lU-fL-6Zd"/>
                                             <constraint firstItem="6fi-kL-7bR" firstAttribute="leading" secondItem="Jx5-uV-w8i" secondAttribute="leading" type="default" id="Ovr-Jj-fNv"/>
-                                            <constraint firstItem="62o-4x-xDm" firstAttribute="top" secondItem="Jx5-uV-w8i" secondAttribute="top" constant="39" id="wVy-cv-wzu"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="125" id="piv-VN-L81">
@@ -232,27 +221,16 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="B5e-vD-aGO" kind="push" identifier="Show Map" id="p6N-mL-q1y"/>
+                                                        <segue destination="B5e-vD-aGO" kind="push" identifier="map" id="p6N-mL-q1y"/>
                                                     </connections>
                                                 </button>
-                                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Coe Map" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oLb-ZD-bIb">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="97" id="qKd-KY-DzW"/>
-                                                        <constraint firstAttribute="height" constant="30" id="xbH-7n-6bi"/>
-                                                    </constraints>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="B21-oP-aJV" firstAttribute="leading" secondItem="piv-VN-L81" secondAttribute="leading" type="default" id="7Qp-nd-nfF"/>
-                                            <constraint firstAttribute="trailing" secondItem="oLb-ZD-bIb" secondAttribute="trailing" constant="20" type="default" id="KKq-Ns-c9L"/>
                                             <constraint firstItem="B21-oP-aJV" firstAttribute="top" secondItem="piv-VN-L81" secondAttribute="top" constant="12" id="qby-qQ-lHF"/>
-                                            <constraint firstItem="oLb-ZD-bIb" firstAttribute="top" secondItem="piv-VN-L81" secondAttribute="top" constant="38" id="yZs-6N-o1C"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="122" id="Nc3-HJ-oCx">
@@ -276,26 +254,15 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="D8b-Hn-IYx" kind="push" id="3Gm-p4-Gkw"/>
+                                                        <segue destination="D8b-Hn-IYx" kind="push" identifier="twitter" id="3Gm-p4-Gkw"/>
                                                     </connections>
                                                 </button>
-                                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Twitter" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AOx-K0-IKp">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="97" id="4b5-DP-PeN"/>
-                                                        <constraint firstAttribute="height" constant="30" id="ANp-2E-sGX"/>
-                                                    </constraints>
-                                                    <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="K90-cN-m5f" firstAttribute="leading" secondItem="Nc3-HJ-oCx" secondAttribute="leading" type="default" id="AOq-UP-Y3w"/>
                                             <constraint firstItem="K90-cN-m5f" firstAttribute="centerY" secondItem="Nc3-HJ-oCx" secondAttribute="centerY" type="default" id="PpG-wS-G3q"/>
-                                            <constraint firstAttribute="trailing" secondItem="AOx-K0-IKp" secondAttribute="trailing" constant="20" type="default" id="lfv-Bv-vsw"/>
-                                            <constraint firstItem="AOx-K0-IKp" firstAttribute="top" secondItem="Nc3-HJ-oCx" secondAttribute="top" constant="37" id="smg-Yv-W0C"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="118" id="Ls6-gP-xRE">
@@ -319,23 +286,7 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="6g6-Tv-EnO" kind="push" id="MiP-yG-gmQ"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPH-7W-Knq">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="91" id="Ax3-U1-6ii"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <state key="normal" title="Donations">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <state key="highlighted">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="6g6-Tv-EnO" kind="push" id="pwE-c0-q7r"/>
+                                                        <segue destination="6g6-Tv-EnO" kind="push" identifier="donations" id="MiP-yG-gmQ"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -344,8 +295,6 @@
                                         <constraints>
                                             <constraint firstItem="MEy-Vg-YiR" firstAttribute="leading" secondItem="Ls6-gP-xRE" secondAttribute="leading" type="default" id="PSd-Am-YKj"/>
                                             <constraint firstItem="MEy-Vg-YiR" firstAttribute="top" secondItem="Ls6-gP-xRE" secondAttribute="top" constant="10" id="Zmx-8f-IAc"/>
-                                            <constraint firstAttribute="trailing" secondItem="cPH-7W-Knq" secondAttribute="trailing" constant="20" type="default" id="g7H-yv-pyj"/>
-                                            <constraint firstItem="cPH-7W-Knq" firstAttribute="top" secondItem="Ls6-gP-xRE" secondAttribute="top" constant="28" id="wZ2-VY-gRT"/>
                                         </constraints>
                                     </tableViewCell>
                                 </cells>
@@ -448,7 +397,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="MiP-yG-gmQ"/>
-    </inferredMetricsTieBreakers>
 </document>
