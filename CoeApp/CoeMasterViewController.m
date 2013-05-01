@@ -33,6 +33,7 @@
 
 - (void)viewDidLoad
 {
+     [[self navigationController] setNavigationBarHidden:YES animated:NO];
     self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"background-pattern-006.gif"]];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -163,6 +164,7 @@
 //        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
 //        NSDate *object = _objects[indexPath.row];
 //        [[segue destinationViewController] setDetailItem:object];
+        
     }
     
 }

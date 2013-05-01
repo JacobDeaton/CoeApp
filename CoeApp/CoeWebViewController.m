@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad
 {
+    [[self navigationController] setNavigationBarHidden:NO animated:NO];
     [super viewDidLoad];
     NSURL *myURL = [NSURL URLWithString:@"http://coe.edu"];
     NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
@@ -28,6 +29,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    [[self navigationController] setNavigationBarHidden:YES animated:NO];
 }
 
 @end

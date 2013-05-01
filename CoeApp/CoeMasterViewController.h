@@ -11,5 +11,6 @@
 
 @interface CoeMasterViewController : UITableViewController
 - (IBAction)cancel:(UIStoryboardSegue *)segue;
+- (IBAction)buttonPressed:(id)sender;
 
 @end

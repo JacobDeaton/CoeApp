@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad
 {
+    [[self navigationController] setNavigationBarHidden:NO animated:NO];
     [super viewDidLoad];
     [self getTimeLine];
     
@@ -119,6 +120,9 @@
 
     return cell;
 }
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    [[self navigationController] setNavigationBarHidden:YES animated:NO];
+}
 
 @end

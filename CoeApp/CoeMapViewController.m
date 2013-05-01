@@ -19,6 +19,7 @@ NSInteger myInt;
 
 - (void)viewDidLoad
 {
+    [[self navigationController] setNavigationBarHidden:NO animated:NO];
     switch(myInt)
     {
         case 0:
@@ -710,6 +711,10 @@ NSInteger myInt;
     [KohawkVillageAnnotation setCoordinate: KohawkVillage];
     [KohawkVillageAnnotation setTitle:@"Kohawk Village"];
     [self.mapView addAnnotation:KohawkVillageAnnotation];[self.mapView setRegion:newRegion animated:YES];
+}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    [[self navigationController] setNavigationBarHidden:YES animated:NO];
 }
 
 
